@@ -17,5 +17,10 @@ RUN install_zip_package.sh https://ulyssesmod.net/archive/ULib/ulib-v2_63.zip ./
     install_zip_package.sh https://fastdl.jacobtaylor.id.au/drop/assets_ttt.zip ./ && \
     install_zip_package.sh https://fastdl.jacobtaylor.id.au/drop/assets_elevator.zip ./
 
+EXPOSE 27005/udp
+EXPOSE 27015/tcp
+EXPOSE 27015/udp
+EXPOSE 27020/udp
+
 ENTRYPOINT [ "/opt/steam/bin/entrypoint.sh" ]
 CMD [ ]
