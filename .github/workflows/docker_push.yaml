@@ -22,7 +22,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/steamcmd
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/garrysmod
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
       - name: Build container and push to Docker Hub
