@@ -9,7 +9,6 @@ WORKDIR /opt/steam/apps/4020/garrysmod
 
 COPY ./files/mount.cfg ./cfg
 COPY ./files/server.cfg ./cfg
-COPY ./files/users.cfg ./settings
 
 RUN install_zip_package.sh https://ulyssesmod.net/archive/ULib/ulib-v2_63.zip ./addons/ulib && \
     install_zip_package.sh https://ulyssesmod.net/archive/ulx/ulx-v3_73.zip ./addons/ulx && \
