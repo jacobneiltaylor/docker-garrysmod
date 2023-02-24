@@ -6,4 +6,4 @@ install_depot.sh 4020
 
 cd ~
 
-/opt/steam/apps/4020/srcds_run +map gm_construct
+/opt/steam/apps/4020/srcds_run "@"

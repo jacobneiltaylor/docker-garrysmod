@@ -19,4 +19,5 @@ EXPOSE 27015/tcp
 EXPOSE 27015/udp
 EXPOSE 27020/udp
 
-CMD [ "/opt/steam/bin/entrypoint.sh" ]
+ENTRYPOINT [ "/opt/steam/bin/entrypoint.sh" ]
+CMD [ "+map", "gm_construct" ]
