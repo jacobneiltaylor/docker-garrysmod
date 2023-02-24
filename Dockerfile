@@ -3,8 +3,6 @@ FROM --platform=amd64 jacobneiltaylor/steamcmd
 RUN install_depot.sh 232330 && install_depot.sh 4020
 COPY ./scripts/ bin/
 
-COPY ./files/manifest.json .
-
 WORKDIR /opt/steam/apps/4020/garrysmod
 
 COPY ./files/mount.cfg ./cfg
