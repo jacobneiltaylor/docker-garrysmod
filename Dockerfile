@@ -22,5 +22,4 @@ EXPOSE 27015/tcp
 EXPOSE 27015/udp
 EXPOSE 27020/udp
 
-ENTRYPOINT [ "/opt/steam/bin/entrypoint.sh" ]
-CMD [ ]
+CMD [ "/opt/steam/bin/entrypoint.sh" ]
